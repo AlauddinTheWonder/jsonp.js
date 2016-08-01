@@ -9,7 +9,7 @@ var $jsonp = (function(){
       on_success = options.onSuccess || function(){},
       on_timeout = options.onTimeout || function(){},
       timeout = options.timeout || 10,
-		  uniqid = Math.ceil(Math.random()*1000);
+      uniqid = Math.ceil(Math.random()*1000);
 
     var timeout_trigger = window.setTimeout(function(){
       window[callback_name] = function(){};
@@ -24,8 +24,8 @@ var $jsonp = (function(){
     };
     
     Element.prototype.remove = function() {
-			this.parentElement.removeChild(this);
-		}
+        this.parentElement.removeChild(this);
+    }
 
     var script = document.createElement('script');
     script.type = 'text/javascript';
